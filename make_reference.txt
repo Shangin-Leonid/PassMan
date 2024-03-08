@@ -1,0 +1,42 @@
+ ______________________________________________________________________________
+|                         REFERENCE FOR MAKEFILE                               |
+|------------------------------------------------------------------------------|
+| Each 1-level subdir of the project is called 'source component' (but         |
+| 'Unit_tests' is called 'test component' or 'tests').                         |
+| Each 1-level subdir of 'Unit_tests' is called 'test cases component'.        |
+|                                                                              |
+| 'common.mk' is common makefile for all components.                           |
+| 'components.mk' is common makefile for all source components.                |
+|                                                                              |
+| 'Unit_tests' has its own 'make_reference' file.                              |
+|------------------------------------------------------------------------------|
+|                           SOME COMMON TARGETS:                               |
+|------------------------------------------------------------------------------|
+|                                                                              |
+|   You can write 'make' + ' ' + any of the following commands:                |
+|                                                                              |
+| ~ help              - show the reference file                                |
+| ~ print-NAME        - print the value of the variable called NAME            |
+|                                                                              |
+| ~ clean             - clean all auxilary files                               |
+| ~ clean_all         - clean totally                                          |
+|                                                                              |
+|------------------------------------------------------------------------------|
+|                        SOME COMMON MAKE PARAMETERS:                          |
+|------------------------------------------------------------------------------|
+|                                                                              |
+| ~ COMPILER          - the compiler for building (g++, clang++ and etc.)      |
+| ~ CPP_STANDART_FLAG - the c++ standart for building (-std=c++20 and etc.)    |
+|                                                                              |
+|------------------------------------------------------------------------------|
+|              DISCRIPTIONS OF EACH TARGET OF SOURCE COMPONENTS:               |
+|------------------------------------------------------------------------------|
+|                                                                              |
+| ~ build_component   - (from any source component dir)                        |
+|                       compile the static lib of the component                |
+|                                                                              |
+| There are few other targets, which are used like supporting.                 |
+|                                                                              |
+| All makefiles have been written for Linux. Sorry, if you have another OS :-( |
+| I wish you could understand my make-code and then rewrite some parts.        |
+|______________________________________________________________________________]
