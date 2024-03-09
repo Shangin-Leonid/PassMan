@@ -1,6 +1,5 @@
 #pragma once
 
-#include <memory>
 #include <string>
 #include <fstream>
 
@@ -10,7 +9,7 @@ namespace UTUtils
 {
 
 /*
-** Use 'DataGenerator' for generating database entries (their string representations) and redirect ** it to the chosen text file.
+** Uses 'DataGenerator' for generating database entries (their string representations) and redirect ** it to the chosen text file.
 */
 class FileDataGenerator final : private DataGenerator
 {
