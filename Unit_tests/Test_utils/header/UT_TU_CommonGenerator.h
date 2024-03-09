@@ -1,8 +1,7 @@
 #pragma once
 
-#include <vector>
 #include <cstddef>
-
+#include <vector>
 #include <functional>
 
 namespace UTUtils
